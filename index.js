@@ -108,6 +108,48 @@ client.initialize();
 //     chat.sendMessage(m);
 //   }
 // }
+// const request = require('request');
+// const fs = require('fs');
+
+// const numbers = [
+
+//     "082154928425",
+//     "085172076290",
+//     "085174442023",
+    
+//     ];
+
+//     const url = 'http://127.0.0.1:8000/send-media';
+//     const headers = {'Content-Type': 'application/json'};
+    
+//     async function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+//     }
+
+//     async function sendMedia(num) {
+//         const data = JSON.stringify({
+//         "caption": " TEST AJA ",
+//         "number": num,
+//         "file": "xxx.png",
+//         });
+        
+//         request.post({ url, headers, body: data }, (error, response, body) => { 
+     
+      
+//         });
+// }
+
+
+// async function sendMediaWithDelay() {
+//     for (let i = 0; i < numbers.length; i++) {
+//             await sendMedia(numbers[i]);
+//                 if ((i + 1) % 1 === 0) {
+//                 console.log("Waiting for 5 minutes");
+//                 await delay(1000);
+//                 }
+//             }
+//     }
+//     sendMediaWithDelay();
 
 // Socket IO
 io.on('connection', function(socket) {
