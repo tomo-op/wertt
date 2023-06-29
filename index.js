@@ -94,6 +94,21 @@ client.on('message', async msg => {
 
 client.initialize();
 
+//blast message 
+
+
+// client.on('ready', () => {
+//   const message = 'your message here';
+//   sendToChats(message);
+// });
+
+// async function sendToChats(m){
+//   const mychats = await client.getChats();
+//   for(chat of mychats){
+//     chat.sendMessage(m);
+//   }
+// }
+
 // Socket IO
 io.on('connection', function(socket) {
   socket.emit('message', 'Connecting...');
